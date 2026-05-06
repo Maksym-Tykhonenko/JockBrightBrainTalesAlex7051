@@ -4,8 +4,9 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: BrightBrainAPIKey
+      app_store_connect: BrightBrainAPIKeyNew
     environment:
+      xcode: 26.0
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.dhfdkld.rueowgmd.sjshq
