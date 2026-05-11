@@ -64,19 +64,21 @@ const Brihtbraintalstacck = () => {
 
   const ONESIGNAL_KEY = `4d5a9ceb-5c3e-4d3f-ba85-0d5618b85684`;
 
-  const TARGET_DATA = new Date(2026, 4, 4, 8, 8, 0);
+  const TARGET_DATA = new Date(2026, 4, 13, 8, 8, 0);
 
   const FATCH_TO_OUR_BACK = `https://velvet-point.site/`;
   
-  //useEffect(() => {
-  //  const targetData = TARGET_DATA;//дата з якої поч працювати webView
-  //  const currentData = new Date(); //текущая дата
-//
-  //  if (currentData <= targetData) {
-  //    requestTrackingPermission()
-  //  }
-  //  
-  //}, []);
+  useEffect(() => {
+    //const targetData = TARGET_DATA; //дата з якої поч працювати webView
+    //const currentData = new Date(); //текущая дата
+    //
+    //if (currentData <= targetData) {
+    requestTrackingPermission();
+    setAceptTransperency(true);
+    setIdfa('00000000-0000-0000-0000-000000000000');
+    //console.log('ATT статус:', trackingStatus);
+    //}
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
